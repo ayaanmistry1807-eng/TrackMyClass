@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="topbar">
+    <h2>Teacher Dashboard</h2>
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+    <div class="grid">
+        <div class="stat"><i class="fas fa-chalkboard"></i><div><h3>4</h3><p>Classes</p></div></div>
+        <div class="stat"><i class="fas fa-user-check"></i><div><h3>92%</h3><p>Attendance</p></div></div>
+        <div class="stat"><i class="fas fa-users"></i><div><h3>160</h3><p>Students</p></div></div>
+    </div>
+
+    <div class="section">
+        <h3>Today's Tasks</h3>
+        <p>✔ Mark attendance<br>✔ Update student marks</p>
+    </div>
+
+</div>
+
+<script>
+function logout(){ location.href="index.html"; }
+</script>
+
+</body>
+</html>

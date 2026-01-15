@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="topbar">
+    <h2>Admin Dashboard</h2>
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<div class="container">
+
+    <div class="grid">
+        <div class="stat"><i class="fas fa-user-tie"></i><div><h3>18</h3><p>Teachers</p></div></div>
+        <div class="stat"><i class="fas fa-user-graduate"></i><div><h3>420</h3><p>Students</p></div></div>
+        <div class="stat"><i class="fas fa-school"></i><div><h3>12</h3><p>Classes</p></div></div>
+        <div class="stat"><i class="fas fa-chart-line"></i><div><h3>95%</h3><p>Attendance</p></div></div>
+    </div>
+
+    <div class="section">
+        <h3>System Overview</h3>
+        <p>Manage teachers, students, classes and attendance reports.</p>
+    </div>
+
+</div>
+
+<script>
+function logout(){ location.href="index.html"; }
+</script>
+
+</body>
+</html>
