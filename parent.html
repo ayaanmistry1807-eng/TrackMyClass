@@ -3,6 +3,7 @@
 <head>
     <title>Parent Dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" type="image/png" href="logo.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -21,12 +22,14 @@
 
     <div class="section">
         <h3>Marks Overview</h3>
-        <table>
-            <tr><th>Subject</th><th>Marks</th><th>Status</th></tr>
-            <tr><td>Math</td><td>85</td><td><span class="badge good">Good</span></td></tr>
-            <tr><td>Science</td><td>72</td><td><span class="badge average">Average</span></td></tr>
-            <tr><td>English</td><td>60</td><td><span class="badge average">Average</span></td></tr>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <tr><th>Subject</th><th>Marks</th><th>Status</th></tr>
+                <tr><td>Math</td><td>85</td><td><span class="badge good">Good</span></td></tr>
+                <tr><td>Science</td><td>72</td><td><span class="badge average">Average</span></td></tr>
+                <tr><td>English</td><td>60</td><td><span class="badge average">Average</span></td></tr>
+            </table>
+        </div>
     </div>
 
 </div>
@@ -37,3 +40,4 @@ function logout(){ location.href="index.html"; }
 
 </body>
 </html>
+
