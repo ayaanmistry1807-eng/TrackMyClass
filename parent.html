@@ -1,43 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Parent Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
     <link rel="icon" type="image/png" href="logo.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- FONT AWESOME (CORRECT) -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- DASHBOARD CSS -->
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
 
 <div class="topbar">
     <h2>Parent Dashboard</h2>
-    <button class="logout" onclick="logout()">Logout</button>
+    <button class="logout" onclick="location.href='index.html'">Logout</button>
 </div>
 
 <div class="container">
 
     <div class="grid">
-        <div class="stat"><i class="fas fa-user-check"></i><div><h3>94%</h3><p>Attendance</p></div></div>
-        <div class="stat"><i class="fas fa-book"></i><div><h3>5</h3><p>Subjects</p></div></div>
+
+        <div class="stat">
+            <!-- HARD-FORCED RED ICON -->
+            <span style="color:#e74c3c !important;">
+                <i class="fas fa-user-check"></i>
+            </span>
+            <div>
+                <h3>94%</h3>
+                <p>Attendance</p>
+            </div>
+        </div>
+
+        <div class="stat">
+            <!-- HARD-FORCED RED ICON -->
+            <span style="color:#e74c3c !important;">
+                <i class="fas fa-book"></i>
+            </span>
+            <div>
+                <h3>5</h3>
+                <p>Subjects</p>
+            </div>
+        </div>
+
     </div>
 
     <div class="section">
         <h3>Marks Overview</h3>
+
         <div class="table-wrapper">
             <table>
-                <tr><th>Subject</th><th>Marks</th><th>Status</th></tr>
-                <tr><td>Math</td><td>85</td><td><span class="badge good">Good</span></td></tr>
-                <tr><td>Science</td><td>72</td><td><span class="badge average">Average</span></td></tr>
-                <tr><td>English</td><td>60</td><td><span class="badge average">Average</span></td></tr>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>85</td>
+                    <td><span class="badge good">Good</span></td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>72</td>
+                    <td><span class="badge average">Average</span></td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>60</td>
+                    <td><span class="badge average">Average</span></td>
+                </tr>
             </table>
         </div>
     </div>
 
 </div>
 
-<script>
-function logout(){ location.href="index.html"; }
-</script>
-
 </body>
 </html>
+
+
 
