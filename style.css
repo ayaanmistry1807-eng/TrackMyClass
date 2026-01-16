@@ -167,3 +167,18 @@ body {
     font-size: 14px;
     text-decoration: none;
 }
+/* LOGIN ERROR MESSAGE */
+.error-text {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-bottom: 10px;
+    min-height: 18px; /* keeps space even when empty */
+}
+/* Parent login icon color */
+.card.parent i {
+    color: #e74c3c; /* RED */
+}
+/* Student login icon – darker for better contrast */
+.card.student i {
+    color: #1f5fd6;
+}
